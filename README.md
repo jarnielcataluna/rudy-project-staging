@@ -1,1 +1,2 @@
-# rudy-project-staging
+# manulife-ms
+Microsite for Manulife
