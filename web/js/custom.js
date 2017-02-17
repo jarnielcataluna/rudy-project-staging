@@ -82,6 +82,11 @@ doc.ready(function() {
         }
     });
 
+    $('.remove a').click(function(e){
+    	e.preventDefault();
+    	$(this).closest('tr').remove();
+    });
+
     $('.show-search').click(function(e){
     	e.preventDefault();
 
