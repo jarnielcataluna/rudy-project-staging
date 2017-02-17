@@ -242,14 +242,8 @@
   @else if $point == desktop {
     @media (max-width: 1024px) { @content; }
   }
-  @else if $point == non-laptop {
-    @media (min-width: 951px) { @content; }
-  }
-  @else if $point == laptop {
-    @media (max-width: 950px) { @content; }
-  }
   @else if $point == tablet {
-    @media (max-width: 810px) { @content; }
+    @media (max-width: 991px) { @content; }
   }
   @else if $point == tablet2 {
     @media (max-width: 760px) { @content; }

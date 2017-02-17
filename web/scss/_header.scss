@@ -41,6 +41,24 @@ header {
 	}
 }
 
+.top-header {
+	margin-bottom: 10px;
+	background: #ededed;
+	position: absolute;
+	top: 0;
+
+	ul {
+		text-align: center;
+
+		li {
+			display: inline-block;
+			text-align: center;
+			padding: 0px 25px;
+			font-size: 14px;
+		}
+	}
+}
+
 .header-tool {
 	float: right;
 	font-size: 18px;
@@ -181,6 +199,9 @@ header {
 	opacity: 0;
 	visibility: hidden;
 	display: none;
+	background: #ccc;
+	box-shadow: 3px 2px 6px 0 rgba(0, 0, 0, 0.05), 0px 2px 2px 0 rgba(0, 0, 0, 0.15);
+	
 
 	.container {
 		max-width: 600px;
@@ -188,9 +209,11 @@ header {
 
 	.input-wrap {
 		position: relative;
+		margin-top: 10px;
 		input[type="text"] {
 			padding: 10px 15px;
 			font-size: 20px;
+			outline: none;
 
 			&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 				color: #ccc;

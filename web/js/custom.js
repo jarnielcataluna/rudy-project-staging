@@ -82,6 +82,30 @@ doc.ready(function() {
         }
     });
 
+    $('.show-search').click(function(e){
+    	e.preventDefault();
+
+    	if($(this).hasClass('active')) {
+    		$('.search-field').stop(true, false).slideUp().css({'opacity' : '0', 'visibility' : 'hidden'});
+	    	$(this).removeClass('active');
+    	} else {
+    		
+
+	    	$('.search-field').stop(true, false).slideDown().css({'opacity' : '1', 'visibility' : 'visible'});
+	    	$('.search-field input[type="text"]').focus();
+	    	$(this).addClass('active');
+    	}
+    });
+
+    $('.pd-desc-tabs  ul > li > a').click(function(e){
+    	e.preventDefault();
+    	var _this = $(this).attr('href');
+    	$('.pd-desc-tabs  ul > li').removeClass('active');
+    	$(this).closest('li').addClass('active');
+    	$('.pd-desc-content').css({'display' : 'none'});
+    	$(_this).css({'display' : 'block'});
+    });
+
  //    $('#home-banner .flexslider').flexslider({
 	//     animation: "fade"
 	// });
